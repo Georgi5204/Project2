@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bars in Vratsa</title>
+</head>
+<body>
+    <h1>Bars in Vratsa</h1>
+    <form action="#"> 
+        <p></p>
+        <label for="position">Where are you?</label>
+        <input type="text" id="position" name="position"><br><br>
+        </form>
+        <button onclick="showBars()">Check nearby Bars</button>
+
+ <div id="bars">
+    <label for="bars">Choose a bar:</label>
+        <select classname="bars">
+             <option value="Jar">The Jar</option>
+             <option value="Rock">Rock club</option>
+             <option value="princess">Thracian princess</option>
+        </select>
+</div>
+<script>
+
+        document.getElementById("bars").style.visibility = "hidden";
+
+        function showBars(){
+        document.getElementById("bars").style.visibility ='visible';
+    }
+</script>
+</body>
+</html>
