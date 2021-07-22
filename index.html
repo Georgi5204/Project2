@@ -12,6 +12,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bars in Vratsa</title>
+    
 </head>
 <body onload="startTime()">
     <div id="txt"></div>
@@ -21,8 +22,11 @@
         <label for="position"><strong>Meters</strong></label>
         <input type="text" id="position" name="position"><br><br>
         </form>
-        <button onclick="showBars()">Check nearby Bars</button>
+        <button onclick="showBars()">Check nearby Bar's</button>
+        <br>
+        <button id ="btn" onclick="showOpenBars()">Check open Bar's</button>
         <p id="demo"></p>
+
 
  <div id="bars">
     <label for="bars">Bar's in Vratsa</label>
@@ -39,6 +43,7 @@
              <option value="the_wight_bar">10 the wight bar 19:30 - 04:30 12m</option>
         </select>
 </div>
+
 
 <!-- <div id="openBars">
     <label for="openBars">Open bar's</label>
@@ -78,10 +83,13 @@
 
 
 </div>
+
 <script>
 
         document.getElementById("bars").style.visibility = "hidden";
-        document.getElementById("openBars").style.visibility = "hidden";
+        document.getElementById("dailyBars").style.visibility = "hidden";
+        document.getElementById("NightBars").style.visibility = "hidden";
+        document.getElementById("btn").style.visibility = "hidden";
 
          function showBars(){
             let x = document.getElementById("position").value
@@ -90,11 +98,15 @@
                 text = "Please enter a meters between 1 and 100";
             } else {
                document.getElementById("bars").style.visibility ='visible';
-               document.getElementById("openBars").style.visibility = 'visible';
+                // document.getElementById("btn").style.visibility = "visible";
+               console.log();
+
             }
             document.getElementById("demo").innerHTML = text;
             }
          function startTime() {
+            let timeText = "";
+            let x2 = document.getElementById("position").value
             const today = new Date();
             let h = today.getHours();
             let m = today.getMinutes();
@@ -103,18 +115,27 @@
             s = checkTime(s);
             document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
             setTimeout(startTime, 1000);
+
+            if(isNaN(x2) || x2 < 1 || x2 > 100){
+                timeText = "Please enter a meters between 1 and 100";
+            }else {
+                    if (h > 19) {
+               document.getElementById("btn").style.visibility = "visible"; 
+            } else {
+            console.log('here ?')
+                
             }
+            }
+        }
          function checkTime(i) {
-            if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+            if (i < 10) {i = "0" + i};
              return i;
-            }           
-         function checkOpenBars(){
-             if (checkTime == ) {
-                 
-             } else {
-                 
-             }
+            }   
+           function showOpenBars(){
+                    
+                    document.getElementById("NightBars").style.visibility = "visible";
          }
 </script>
+
 </body>
 </html>
