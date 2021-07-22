@@ -1,57 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bars in Vratsa</title>
-</head>
-<body>
-    <h1>Bars in Vratsa</h1>
-    <form action="#"> 
-        <p>Starting point Botev Square</p>
-        <label for="position">Where are you?</label>
-        <input type="text" id="position" name="position"><br><br>
-        </form>
-        <button onclick="showBars()">Check nearby Bars</button>
-        <p id="demo"></p>
-
- <div id="bars">
-    <label for="bars">Choose a bar:</label>
-        <select classname="bars">
-             <option value="Jar">The Jar 22:00 - 05:00 30m</option>
-             <option value="Rock">Rock club 22:30 - 04:30 55m</option>
-             <option value="princess">Thracian princess 10:30 - 23:30 69m</option>
-             <option value="qbar">Q Bar 11:00 - 23:30 25m</option>
-             <option value="corona">Corona 10:30 - 23:30 70m</option>
-             <option value="Kadife">Kadife 11:30 - 00:30 65m</option>
-             <option value="italian_resturant">italian resturant 09:30 - 23:30 85m</option>
-             <option value="Omerta">Omerta 10:30 - 23:30 22m</option>
-             <option value="valentino">valentino 19:30 - 03:30 17m</option>
-             <option value="the_wight_bar">the wight bar 19:30 - 04:30 12m</option>
-        </select>
-</div>
-<script>
-
-        document.getElementById("bars").style.visibility = "hidden";
-
-        function showBars(){
-            let x = document.getElementById("position").value
-            let text;
-            if (isNaN(x) || x < 1 || x > 100){
-                text = "Please enter a meters between 1 and 100";
-            } else {
-               document.getElementById("bars").style.visibility ='visible';
-            }
-            document.getElementById("demo").innerHTML = text;
-    }
-</script>
-</body>
-</html>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
     <style>
         * {
           text-align: center;
