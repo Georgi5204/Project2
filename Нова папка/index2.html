@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bars in Vratsa</title>
+
+    <script src="engine.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body onload="startTime()">
+    <div id="txt"></div>
+    <h1>Bars in Vratsa</h1>
+    <form action="#"> 
+        <p><strong>Starting point Botev Square</strong></p>
+        <label for="position"><strong>Meters</strong></label>
+        <input type="text" id="position" name="position"><br><br>
+        </form>
+        <button id = "btnOne" onclick="showBars()">Check nearby Bar's</button>
+        <br>
+        <button id ="btn" onclick="showOpenBars()">Check open Bar's</button>
+
+        <button id ="btnTwo" onclick ="showOpenNightBars()">Check the bars's on the map..</button>
+        <p id="demo"></p>
+
+
+ <div id="bars">
+    <label for="bars">Bar's in Vratsa</label>
+        <select classname="bars">
+             <option value="Jar">1 The Jar 22:00 - 05:00 30m</option>
+             <option value="Rock">2 Rock club 22:30 - 04:30 55m</option>
+             <option value="princess">3 Thracian princess 10:30 - 23:30 69m</option>
+             <option value="qbar">4 Q Bar 11:00 - 23:30 25m</option>
+             <option value="corona">5 Corona 10:30 - 23:30 70m</option>
+             <option value="Kadife">6 Kadife 11:30 - 00:30 65m</option>
+             <option value="italian_resturant">7 italian resturant 09:30 - 23:30 85m</option>
+             <option value="Omerta">8 Omerta 10:30 - 23:30 22m</option>
+             <option value="valentino">9 valentino 19:30 - 03:30 17m</option>
+             <option value="the_wight_bar">10 the wight bar 19:30 - 04:30 12m</option>
+        </select>
+</div>
+        <div id="dailyBars">
+            <label for="dailyBars">Daily Open bar's</label>
+                <select classname="dailyBars">
+                     <option value="princess">1 Thracian princess 10:30 - 23:30 69m</option>
+                     <option value="qbar">2 Q Bar 11:00 - 23:30 25m</option>
+                     <option value="corona">3 Corona 10:30 - 23:30 70m</option>
+                     <option value="Kadife">4 Kadife 11:30 - 00:30 65m</option>
+                     <option value="italian_resturant">5 italian resturant 09:30 - 23:30 85m</option>
+                     <option value="Omerta">6 Omerta 10:30 - 23:30 22m</option>
+                </select>
+
+                <div id="NightBars">
+                    <label for="NightBars">Night Open bar's</label>
+                        <select id="NightBar" onchange = "onchangeNightBars()">
+                            <option>Choose your Nightbar...... </option>
+                             <option id = "Jar" value="Jar">1 The Jar 22:00 - 05:00 150m</option>
+                             <option id = "Rock" value = "Rock">2 Rock club 22:30 - 04:30 550m</option>
+                             <option id = "qbar" value= "qbar">3 Q Bar 11:00 - 23:30 25m</option>
+                             <option id = "valentino" value= "valentino">4 valentino 19:30 - 03:30 17m</option>
+                             <option id = "the_wight_bar" value="the_wight_bar">5 the wight bar 19:30 - 04:30 12m</option>
+                        </select>
+
+                        <p>Your choice is : <input type="text" id="demo2" size="20"></p>
+                        
+                        
+                        <img id = "JarPic"  src= "1jar.png" alt="The jar night club" width="1100" height="900">
+                        
+                        <img id = "rockPic"  src= "1rock.jpg" alt="rockt club" width="1100" height="900">
+                    </div>
+                        <script>
+                            document.getElementById("JarPic").style.visibility = "hidden";
+                            document.getElementById("rockPic").style.visibility = "hidden";
+
+                            document.getElementById("bars").style.visibility = "hidden";
+                            document.getElementById("dailyBars").style.visibility = "hidden";
+                            document.getElementById("NightBars").style.visibility = "hidden";
+                            document.getElementById("btn").style.visibility = "hidden";
+                            document.getElementById("btnOne").style.visibility = "hidden";
+                            
+                        </script>
+
+</body>
+</html>
