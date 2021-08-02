@@ -19,7 +19,7 @@
                     return 0;
                     
                 }else {
-                        if (h < 19) {
+                        if (h > 19) {
                    document.getElementById("bars").style.visibility ='visible';
                    document.getElementById("NightBars").style.visibility = "visible";
                    
@@ -48,9 +48,9 @@
                                         x.setAttribute("width", "1500");
                                         x.setAttribute("height", "900");
                                         x.setAttribute("alt", "The Pulpit Rock");
-                                        document.body.appendChild(x);                                return
-                                } else {
-                                }
+                                        document.body.appendChild(x);
+                                        return
+                                } 
                                 if (document.getElementById("NightBar").value == "Rock") {
                                     let z = document.createElement("IMG");
                                         z.setAttribute("src", "1rock.jpg");
@@ -59,8 +59,7 @@
                                         z.setAttribute("alt", "");
                                         document.body.appendChild(z); 
                                     return
-                                } else {
-                                }
+                                } 
                                 if (document.getElementById("NightBar").value == "qbar") {
                                     let a = document.createElement("IMG");
                                         a.setAttribute("src", "qbar.jpg");
@@ -69,8 +68,24 @@
                                         a.setAttribute("alt", "");
                                         document.body.appendChild(a); 
                                     return
-                                } else {
-                                    
+                                }
+                                if (document.getElementById("NightBar").value == "valentino") {
+                                    let g = document.createElement("IMG");
+                                        g.setAttribute("src", "1valentino.jpg");
+                                        g.setAttribute("width", "1500");
+                                        g.setAttribute("height", "900");
+                                        g.setAttribute("alt", "");
+                                        document.body.appendChild(g); 
+                                    return }
+
+                                    if (document.getElementById("NightBar").value == "the_wight_bar") {
+                                    let y = document.createElement("IMG");
+                                        y.setAttribute("src", "wight.jpg");
+                                        y.setAttribute("width", "1500");
+                                        y.setAttribute("height", "900");
+                                        y.setAttribute("alt", "");
+                                        document.body.appendChild(y); 
+                                    return 
                                 }
                         }   
             
@@ -80,13 +95,14 @@
                                     
                                     if (document.getElementById("dailyBar").value == "princess") {
                                     let x = document.createElement("IMG");
-                                        x.setAttribute("src", "thr.jpg");
+                                        x.setAttribute("src", "wight.jpg");
                                         x.setAttribute("id", "princessOne");
                                         x.setAttribute("width", "1500");
                                         x.setAttribute("height", "900");
                                         x.setAttribute("alt", "");
                                         document.body.appendChild(x);
-                                    return } 
+                                    return
+                                     } 
 
                                 if (document.getElementById("dailyBar").value == "qbar"){
                                     let z = document.createElement("IMG");
@@ -96,7 +112,8 @@
                                         z.setAttribute("height", "900");
                                         z.setAttribute("alt", "");
                                         document.body.appendChild(z);
-                                    return  }  
+                                    return 
+                                }  
 
                                 if (document.getElementById("dailyBar").value == "corona") {
                                     let s = document.createElement("IMG");
@@ -106,7 +123,19 @@
                                         s.setAttribute("height", "900");
                                         s.setAttribute("alt", "");
                                         document.body.appendChild(s);
-                                    return }
+                                    return
+                                }
+
+                                 if (document.getElementById("dailyBar").value == "Kadife") {
+                                    let b = document.createElement("IMG");
+                                        b.setAttribute("src", "kadife.jpg");
+                                        b.setAttribute("id", "coronaOne");
+                                        b.setAttribute("width", "1500");
+                                        b.setAttribute("height", "900");
+                                        b.setAttribute("alt", "");
+                                        document.body.appendChild(b);
+                                    return
+                                }
 
                                      if (document.getElementById("dailyBar").value == "italian_resturant") {
                                     let f = document.createElement("IMG");
@@ -116,7 +145,8 @@
                                         f.setAttribute("height", "900");
                                         f.setAttribute("alt", "");
                                         document.body.appendChild(f);
-                                    return }
+                                    return
+                                }
 
                                      if (document.getElementById("dailyBar").value == "Omerta") {
                                     let d = document.createElement("IMG");
@@ -126,30 +156,20 @@
                                         d.setAttribute("height", "900");
                                         d.setAttribute("alt", "");
                                         document.body.appendChild(d);
-                                        return }
-
+                                        return
+                                    }
                                         
-                                        function removeEl(id){
-                                            var myobj = document.getElementById("princessOne");
-                                            myobj.remove();
+                                            
                                         }
-                                    // if(document.getElementById("dailyBar").value == "zero"){
-                                    //     document.getElementById("princessOne").style.visibility = "hidden";
-                                    //     return
-                                    //     document.getElementById("coronaOne").style.visibility = "hidden";
-                                    //     return
-                                    //     document.getElementById("italianOne").style.visibility = "hidden";
-                                    //     return
-                                    //     document.getElementById("omertaOne").style.visibility = "hidden";
-                                    //     return
-                                        //document.getElementById("qbar").style.visibility = "hidden";
-                                       // document.getElementById("qbar").style.visibility = "hidden";
-                                        
-                                    //}
-                                }
-                                    
+                                         // function removeEl(){
+                                         //    var myobj = document.getElementById("princessOne");
+                                         //    if(document.getElementById("dailyBar").value == "zero"){
+                                         //        //myobj.remove();
+                                         //        console.log('yohoo');
+                                         //    } 
+                                         //    }
 
+                                        
                                 
 
-                
-                
+        
