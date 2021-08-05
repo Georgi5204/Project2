@@ -16,6 +16,7 @@
                     document.getElementById("bars").style.visibility ='hidden';
                     document.getElementById("NightBars").style.visibility = "hidden";
                     document.getElementById("dailyBars").style.visibility = "hidden";
+                    document.getElementById("princessOne").style.visibility = "hidden";
                     return 0;
                     
                 }else {
@@ -44,7 +45,7 @@
                                 document.getElementById("demo2").value = NightBar.options[NightBar.selectedIndex].text;
                                 if (document.getElementById("NightBar").value == "Jar") {
                                     let x = document.createElement("IMG");
-                                        x.setAttribute("src", "1jar.png");
+                                        x.setAttribute("src", "F1/1jar.png");
                                         x.setAttribute("width", "1500");
                                         x.setAttribute("height", "900");
                                         x.setAttribute("alt", "The Pulpit Rock");
@@ -53,7 +54,7 @@
                                 } 
                                 if (document.getElementById("NightBar").value == "Rock") {
                                     let z = document.createElement("IMG");
-                                        z.setAttribute("src", "1rock.jpg");
+                                        z.setAttribute("src", "F1/1rock.jpg");
                                         z.setAttribute("width", "1500");
                                         z.setAttribute("height", "900");
                                         z.setAttribute("alt", "");
@@ -62,7 +63,7 @@
                                 } 
                                 if (document.getElementById("NightBar").value == "qbar") {
                                     let a = document.createElement("IMG");
-                                        a.setAttribute("src", "qbar.jpg");
+                                        a.setAttribute("src", "F1/qbar.jpg");
                                         a.setAttribute("width", "1500");
                                         a.setAttribute("height", "900");
                                         a.setAttribute("alt", "");
@@ -71,7 +72,7 @@
                                 }
                                 if (document.getElementById("NightBar").value == "valentino") {
                                     let g = document.createElement("IMG");
-                                        g.setAttribute("src", "1valentino.jpg");
+                                        g.setAttribute("src", "F1/1valentino.jpg");
                                         g.setAttribute("width", "1500");
                                         g.setAttribute("height", "900");
                                         g.setAttribute("alt", "");
@@ -80,7 +81,7 @@
 
                                     if (document.getElementById("NightBar").value == "the_wight_bar") {
                                     let y = document.createElement("IMG");
-                                        y.setAttribute("src", "wight.jpg");
+                                        y.setAttribute("src", "F1/wight.jpg");
                                         y.setAttribute("width", "1500");
                                         y.setAttribute("height", "900");
                                         y.setAttribute("alt", "");
@@ -95,7 +96,7 @@
                                     
                                     if (document.getElementById("dailyBar").value == "princess") {
                                     let x = document.createElement("IMG");
-                                        x.setAttribute("src", "wight.jpg");
+                                        x.setAttribute("src", "F1/wight.jpg");
                                         x.setAttribute("id", "princessOne");
                                         x.setAttribute("width", "1500");
                                         x.setAttribute("height", "900");
@@ -106,7 +107,7 @@
 
                                 if (document.getElementById("dailyBar").value == "qbar"){
                                     let z = document.createElement("IMG");
-                                        z.setAttribute("src", "qbar.jpg");
+                                        z.setAttribute("src", "F1/qbar.jpg");
                                         z.setAttribute("id", "qbarOne");
                                         z.setAttribute("width", "1500");
                                         z.setAttribute("height", "900");
@@ -117,7 +118,7 @@
 
                                 if (document.getElementById("dailyBar").value == "corona") {
                                     let s = document.createElement("IMG");
-                                        s.setAttribute("src", "1Corona.jpg");
+                                        s.setAttribute("src", "F1/1Corona.jpg");
                                         s.setAttribute("id", "coronaOne");
                                         s.setAttribute("width", "1500");
                                         s.setAttribute("height", "900");
@@ -128,7 +129,7 @@
 
                                  if (document.getElementById("dailyBar").value == "Kadife") {
                                     let b = document.createElement("IMG");
-                                        b.setAttribute("src", "kadife.jpg");
+                                        b.setAttribute("src", "F1/kadife.jpg");
                                         b.setAttribute("id", "coronaOne");
                                         b.setAttribute("width", "1500");
                                         b.setAttribute("height", "900");
@@ -139,7 +140,7 @@
 
                                      if (document.getElementById("dailyBar").value == "italian_resturant") {
                                     let f = document.createElement("IMG");
-                                        f.setAttribute("src", "italian.jpg");
+                                        f.setAttribute("src", "F1/italian.jpg");
                                         f.setAttribute("id", "italianOne");
                                         f.setAttribute("width", "1500");
                                         f.setAttribute("height", "900");
@@ -150,7 +151,7 @@
 
                                      if (document.getElementById("dailyBar").value == "Omerta") {
                                     let d = document.createElement("IMG");
-                                        d.setAttribute("src", "omerta.jpg");
+                                        d.setAttribute("src", "F1/omerta.jpg");
                                         d.setAttribute("id", "omertaOne");
                                         d.setAttribute("width", "1500");
                                         d.setAttribute("height", "900");
