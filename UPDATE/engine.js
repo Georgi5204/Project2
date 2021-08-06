@@ -44,20 +44,20 @@
                                 
                                 document.getElementById("demo2").value = NightBar.options[NightBar.selectedIndex].text;
                                 if (document.getElementById("NightBar").value == "Jar") {
-                                    let x = document.createElement("IMG");
-                                        x.setAttribute("src", "F1/1jar.png");
-                                        x.setAttribute("width", "1500");
-                                        x.setAttribute("height", "900");
-                                        x.setAttribute("alt", "The Pulpit Rock");
-                                        document.body.appendChild(x);
+                                    let o = document.createElement("IMG");
+                                        o.setAttribute("src", "F1/1jar.png");
+                                        o.setAttribute("id", "JarOne");
+                                        o.setAttribute("width", "1500");
+                                        o.setAttribute("height", "900");
+                                        document.body.appendChild(o);
                                         return
                                 } 
                                 if (document.getElementById("NightBar").value == "Rock") {
                                     let z = document.createElement("IMG");
                                         z.setAttribute("src", "F1/1rock.jpg");
+                                        z.setAttribute("id", "RockOne");
                                         z.setAttribute("width", "1500");
                                         z.setAttribute("height", "900");
-                                        z.setAttribute("alt", "");
                                         document.body.appendChild(z); 
                                     return
                                 } 
@@ -66,7 +66,6 @@
                                         a.setAttribute("src", "F1/qbar.jpg");
                                         a.setAttribute("width", "1500");
                                         a.setAttribute("height", "900");
-                                        a.setAttribute("alt", "");
                                         document.body.appendChild(a); 
                                     return
                                 }
@@ -75,7 +74,6 @@
                                         g.setAttribute("src", "F1/1valentino.jpg");
                                         g.setAttribute("width", "1500");
                                         g.setAttribute("height", "900");
-                                        g.setAttribute("alt", "");
                                         document.body.appendChild(g); 
                                     return }
 
@@ -84,7 +82,6 @@
                                         y.setAttribute("src", "F1/wight.jpg");
                                         y.setAttribute("width", "1500");
                                         y.setAttribute("height", "900");
-                                        y.setAttribute("alt", "");
                                         document.body.appendChild(y); 
                                     return 
                                 }
@@ -96,11 +93,10 @@
                                     
                                     if (document.getElementById("dailyBar").value == "princess") {
                                     let x = document.createElement("IMG");
-                                        x.setAttribute("src", "F1/wight.jpg");
+                                        x.setAttribute("src", "F1/thr.jpg");
                                         x.setAttribute("id", "princessOne");
                                         x.setAttribute("width", "1500");
                                         x.setAttribute("height", "900");
-                                        x.setAttribute("alt", "");
                                         document.body.appendChild(x);
                                     return
                                      } 
@@ -111,7 +107,6 @@
                                         z.setAttribute("id", "qbarOne");
                                         z.setAttribute("width", "1500");
                                         z.setAttribute("height", "900");
-                                        z.setAttribute("alt", "");
                                         document.body.appendChild(z);
                                     return 
                                 }  
@@ -122,7 +117,6 @@
                                         s.setAttribute("id", "coronaOne");
                                         s.setAttribute("width", "1500");
                                         s.setAttribute("height", "900");
-                                        s.setAttribute("alt", "");
                                         document.body.appendChild(s);
                                     return
                                 }
@@ -130,10 +124,9 @@
                                  if (document.getElementById("dailyBar").value == "Kadife") {
                                     let b = document.createElement("IMG");
                                         b.setAttribute("src", "F1/kadife.jpg");
-                                        b.setAttribute("id", "coronaOne");
+                                        b.setAttribute("id", "kadifeOne");
                                         b.setAttribute("width", "1500");
                                         b.setAttribute("height", "900");
-                                        b.setAttribute("alt", "");
                                         document.body.appendChild(b);
                                     return
                                 }
@@ -144,7 +137,6 @@
                                         f.setAttribute("id", "italianOne");
                                         f.setAttribute("width", "1500");
                                         f.setAttribute("height", "900");
-                                        f.setAttribute("alt", "");
                                         document.body.appendChild(f);
                                     return
                                 }
@@ -155,21 +147,23 @@
                                         d.setAttribute("id", "omertaOne");
                                         d.setAttribute("width", "1500");
                                         d.setAttribute("height", "900");
-                                        d.setAttribute("alt", "");
                                         document.body.appendChild(d);
                                         return
                                     }
                                         
                                             
                                         }
-                                         // function removeEl(){
-                                         //    var myobj = document.getElementById("princessOne");
-                                         //    if(document.getElementById("dailyBar").value == "zero"){
-                                         //        //myobj.remove();
-                                         //        console.log('yohoo');
-                                         //    } 
-                                         //    }
+                                        
+                                         function clearImg(){
+                                           
+                                            document.getElementById("princessOne").style.visibility = "hidden";
+                                            document.getElementById("qbarOne").style.visibility = "hidden";
+                                            document.getElementById("coronaOne").style.visibility = "hidden";
+                                            document.getElementById("italianOne").style.visibility = "hidden";
+                                            document.getElementById("kadifeOne").style.visibility = "hidden";
+                                            document.getElementById("omertaOne").style.visibility = "hidden";
 
+                                         }
                                         
                                 
 
