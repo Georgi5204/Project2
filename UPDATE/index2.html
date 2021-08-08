@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body onload="startTime()">
+<body onload = "startTime()">
     <div id="txt"></div>
     <h1>Bars in Vratsa</h1>
 
@@ -25,29 +25,29 @@
  <div id="bars">
     <label for="bars">Bar's in Vratsa</label>
         <select classname="bars">
-             <option id = "zero" value="zero">Select...... </option>
+             <option id = "zero" value="zero">Your choice is.... </option>
              <option value="Jar">1 The Jar 22:00 - 05:00 160m</option>
              <option value="Rock">2 Rock club 22:30 - 04:30 550m</option>
              <option value="princess">3 Thracian princess 10:30 - 23:30 500m</option>
              <option value="qbar">4 Q Bar 11:00 - 23:30 120m</option>
              <option value="corona">5 Corona 10:30 - 23:30 190m</option>
              <option value="Kadife">6 Kadife 11:30 - 00:30 190m</option>
-             <option value="italian_resturant">7 italian resturant 09:30 - 23:30 300m</option>
+             <option value="italian_resturant">7 Italian resturant 09:30 - 23:30 300m</option>
              <option value="Omerta">8 Omerta 10:30 - 23:30 170m</option>
-             <option value="valentino">9 valentino 19:30 - 03:30 37m</option>
-             <option value="the_wight_bar">10 the wight bar 19:30 - 04:30 19m</option>
+             <option value="valentino">9 Valentino 19:30 - 03:30 37m</option>
+             <option value="the_white_bar">10 The White Bar 19:30 - 04:30 19m</option>
         </select>
 </div>
         <div id="dailyBars">
             <label for="dailyBars">Daily Open bar's</label>
                 <select id="dailyBar" onchange = "onchangeDayBars()">
-                     <option id = "zero" value="zero">Choose your Day bar...... </option>
-                     <option id = "princess" value="princess">1 Thracian princess 10:30 - 23:30 500m</option>
-                     <option id = "qbar" value = "qbar">2 Q Bar 11:00 - 23:30 120m</option>
-                     <option id = "corona" value="corona">3 Corona 10:30 - 23:30 190m</option>
-                     <option id = "kadife" value="Kadife">4 Kadife 11:30 - 00:30 190m</option>
-                     <option id = "italian_resturant" value="italian_resturant">5 italian resturant 09:30 - 23:30 300m</option>
-                     <option id = "Omerta" value="Omerta">6 Omerta 10:30 - 23:30 170m</option>
+                    <option id = "zero" value="zero">Choose your Day bar...... </option>
+                    <option id = "princess" value="princess">1 Thracian princess 10:30 - 23:30 500m</option>
+                    <option id = "qbar" value = "qbar">2 Q Bar 11:00 - 23:30 120m</option>
+                    <option id = "corona" value="corona">3 Corona 10:30 - 23:30 190m</option>
+                    <option id = "kadife" value="Kadife">4 Kadife 11:30 - 00:30 190m</option>
+                    <option id = "italian_resturant" value="italian_resturant">5 Italian resturant 09:30 - 23:30 300m</option>
+                    <option id = "omerta" value="omerta">6 Omerta 10:30 - 23:30 170m</option>
                 </select>
                 <p>Your choice is : <input type="text" id="demo3" size="20"></p>
                 
@@ -58,12 +58,14 @@
                              <option id = "Jar" value="Jar">1 The Jar 22:00 - 05:00 160m</option>
                              <option id = "Rock" value = "Rock">2 Rock club 22:30 - 04:30 550m</option>
                              <option id = "qbar" value= "qbar">3 Q Bar 11:00 - 23:30 120m</option>
-                             <option id = "valentino" value= "valentino">4 valentino 19:30 - 03:30 37m</option>
-                             <option id = "the_wight_bar" value="the_wight_bar">5 the wight bar 19:30 - 04:30 19m</option>
+                             <option id = "valentino" value= "valentino">4 Valentino 19:30 - 03:30 37m</option>
+                             <option id = "the_white_bar" value="the_white_bar">5 The White Bar 19:30 - 04:30 19m</option>
                         </select>
 
                         <p>Your choice is : <input type="text" id="demo2" size="20"></p>
+                        <button onclick="clearImgTwo()">Clear map </button>
                         </div>
+
                         <button onclick="clearImg()">Clear map </button>
 </body>
 </html>

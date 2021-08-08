@@ -16,11 +16,10 @@
                     document.getElementById("bars").style.visibility ='hidden';
                     document.getElementById("NightBars").style.visibility = "hidden";
                     document.getElementById("dailyBars").style.visibility = "hidden";
-                    document.getElementById("princessOne").style.visibility = "hidden";
-                    return 0;
+                    return;
                     
                 }else {
-                        if (h > 19) {
+                        if (h < 19) {
                    document.getElementById("bars").style.visibility ='visible';
                    document.getElementById("NightBars").style.visibility = "visible";
                    
@@ -38,7 +37,7 @@
                     document.getElementById("NightBars").style.visibility = "visible"; 
                     
              }
-             function onchangeNightBars(){
+            function onchangeNightBars(){
                             document.getElementById("NightBars").style.visibility = "visible"; 
                             var mylist = document.getElementById("NightBar");
                                 
@@ -64,6 +63,7 @@
                                 if (document.getElementById("NightBar").value == "qbar") {
                                     let a = document.createElement("IMG");
                                         a.setAttribute("src", "F1/qbar.jpg");
+                                        a.setAttribute("id", "qOne");
                                         a.setAttribute("width", "1500");
                                         a.setAttribute("height", "900");
                                         document.body.appendChild(a); 
@@ -72,14 +72,16 @@
                                 if (document.getElementById("NightBar").value == "valentino") {
                                     let g = document.createElement("IMG");
                                         g.setAttribute("src", "F1/1valentino.jpg");
+                                        g.setAttribute("id", "valOne");
                                         g.setAttribute("width", "1500");
                                         g.setAttribute("height", "900");
                                         document.body.appendChild(g); 
                                     return }
 
-                                    if (document.getElementById("NightBar").value == "the_wight_bar") {
+                                    if (document.getElementById("NightBar").value == "the_white_bar") {
                                     let y = document.createElement("IMG");
                                         y.setAttribute("src", "F1/wight.jpg");
+                                        y.setAttribute("id", "wOne");
                                         y.setAttribute("width", "1500");
                                         y.setAttribute("height", "900");
                                         document.body.appendChild(y); 
@@ -99,6 +101,7 @@
                                         x.setAttribute("height", "900");
                                         document.body.appendChild(x);
                                     return
+                    
                                      } 
 
                                 if (document.getElementById("dailyBar").value == "qbar"){
@@ -122,6 +125,7 @@
                                 }
 
                                  if (document.getElementById("dailyBar").value == "Kadife") {
+
                                     let b = document.createElement("IMG");
                                         b.setAttribute("src", "F1/kadife.jpg");
                                         b.setAttribute("id", "kadifeOne");
@@ -141,7 +145,7 @@
                                     return
                                 }
 
-                                     if (document.getElementById("dailyBar").value == "Omerta") {
+                                     if (document.getElementById("dailyBar").value == "omerta") {
                                     let d = document.createElement("IMG");
                                         d.setAttribute("src", "F1/omerta.jpg");
                                         d.setAttribute("id", "omertaOne");
@@ -155,14 +159,39 @@
                                         }
                                         
                                          function clearImg(){
-                                           
-                                            document.getElementById("princessOne").style.visibility = "hidden";
-                                            document.getElementById("qbarOne").style.visibility = "hidden";
-                                            document.getElementById("coronaOne").style.visibility = "hidden";
-                                            document.getElementById("italianOne").style.visibility = "hidden";
-                                            document.getElementById("kadifeOne").style.visibility = "hidden";
-                                            document.getElementById("omertaOne").style.visibility = "hidden";
+                                            document.getElementById("princessOne").style.display = 'none';
+                                            document.getElementById("qbarOne").style.display = 'none';
+                                            document.getElementById("coronaOne").style.display = 'none';
+                                            document.getElementById("italianOne").style.display = 'none';
+                                            document.getElementById("kadifeOne").style.display = 'none';
+                                            document.getElementById("omertaOne").style.display = 'none';
+                                         }
 
+                                         function clearImgTwo(){
+                                            if (document.getElementById("JarOne").value == null) {
+                                                document.getElementById("JarOne").style.display = 'none';
+                                            }
+                                            if (document.getElementById("RockOne").value == null) {
+                                                document.getElementById("RockOne").style.display = 'none';
+                                                
+                                            }
+                                            if (document.getElementById("qOne").value == null) {
+                                                document.getElementById("qOne").style.display = 'none';
+                                                
+                                            }
+                                            if (document.getElementById("valOne").value == null) {
+                                                document.getElementById("valOne").style.display = 'none';
+                                                
+                                            }
+                                            if (document.getElementById("wOne").value == null) {
+                                                document.getElementById("wOne").style.display = 'none';
+                                                
+                                            }
+                                            //document.getElementById("JarOne").style.display = 'none';
+                                            //document.getElementById("RockOne").style.display = 'none';
+                                            //document.getElementById("qOne").style.display = 'none';
+                                            //document.getElementById("valOne").style.display = 'none';
+                                            //document.getElementById("wOne").style.display = 'none';
                                          }
                                         
                                 
